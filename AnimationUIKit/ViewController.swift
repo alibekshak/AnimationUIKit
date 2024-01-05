@@ -37,6 +37,14 @@ class ViewController: UIViewController {
                 break
             case 1:
                 self.imageView.transform = .identity
+            case 2:
+                self.imageView.transform = CGAffineTransform(translationX: -256, y: -256)
+            case 3:
+                self.imageView.transform = .identity
+            case 4:
+                self.imageView.transform = CGAffineTransform(rotationAngle: .pi)
+            case 5:
+                self.imageView.transform = .identity
             default:
                 break
             }
@@ -46,7 +54,7 @@ class ViewController: UIViewController {
         
         currentAnimation += 1
         
-        if currentAnimation > 7 {
+        if currentAnimation > 5 {
             currentAnimation = 0
         }
     }
